@@ -59,7 +59,7 @@ def answer_questions(bot, update):
         if answer_the_question != '*':
             text += answer_the_question + '\n'
 
-        if ((random.randint(0, base_w.tallkative_is()) > 50) and (text != '')) or ('Да пошел ты по кругу' in text):
+        if ((random.randint(0, base_w.tallkative_is()) > 50) and (text != '')) or (flag == False):
             bot.send_message(message.chat.id, text)
 
         if flag != False:
